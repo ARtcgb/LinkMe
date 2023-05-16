@@ -4,6 +4,7 @@
 >
 
     <application
+            android:name=".LinkMeApplication"
             android:allowBackup="true"
             android:fullBackupContent="@xml/backup_rules"
             tools:targetApi="31"
