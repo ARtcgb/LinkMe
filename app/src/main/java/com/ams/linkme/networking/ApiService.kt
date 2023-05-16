@@ -1,34 +1,22 @@
 package com.ams.linkme.networking
 
-import com.ams.linkme.model.User
 import com.ams.linkme.model.Message
+import retrofit2.Response
+import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
-import retrofit2.http.Body
 
-/**
- * ApiService interface that defines the HTTP operations.
- */
 interface ApiService {
 
-    /**
-     * Gets a User by its id.
-     *
-     * @param id The id of the user.
-     * @return The User object.
-     */
-    @GET("users/{id}")
-    suspend fun getUser(@Path("id") id: String): User
+    @GET("chat/{userId}/{friendId}")
+    suspend fun getMessages(
+        @Path("userId") userId: String,
+        @Path("friendId") friendId: String
+    ): Response<List<Message>>
 
-    /**
-     * Sends a message.
-     *
-     * @param message The Message object.
-     * @return The Message object that was sent.
-     */
-    @POST("messages")
-    suspend fun sendMessage(@Body message: Message): Message
-
-    // ... other HTTP operations ...
+    @POST("chat/sendMessage")
+    suspend fun sendMessage(
+        @Body message: Message
+    ): Response<Message>
 }
