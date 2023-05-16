@@ -7,6 +7,10 @@ android {
     namespace 'com.ams.linkme'
     compileSdk 33
 
+    viewBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.ams.linkme"
         minSdk 24
