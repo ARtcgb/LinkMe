@@ -8,12 +8,13 @@
             android:id="@+id/text_view_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chat Activity"
+            android:text="@string/chat_activity"
             android:textSize="18sp"
             android:textStyle="bold"
             android:padding="16dp"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white" />
+
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_messages"
@@ -21,8 +22,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="16dp"
-            android:background="@android:color/background_light" />
-
+            android:background="@android:color/background_light"/>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,14 +33,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Enter message"
+                android:hint="@string/enter_message"
                 android:padding="8dp" />
 
         <Button
                 android:id="@+id/button_send"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Send"
+                android:text="@string/send"
                 android:padding="8dp" />
 
     </LinearLayout>
