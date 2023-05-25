@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/enter_message"
-                android:padding="8dp" />
+                android:padding="8dp" android:minHeight="48dp" android:autofillHints="" android:inputType="text"/>
 
         <Button
                 android:id="@+id/button_send"

@@ -3,4 +3,9 @@
     <string name="chat_activity">Chat Activity</string>
     <string name="enter_message">Enter message</string>
     <string name="send">Send</string>
+    <string name="main_title">Main Activity</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register_hint">Don\'t have an account? Register</string>
 </resources>
