@@ -9,7 +9,7 @@
             android:id="@+id/text_view_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/login"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -19,25 +19,25 @@
             android:id="@+id/edit_text_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:inputType="text"
             android:padding="8dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp" android:minHeight="48dp" android:autofillHints=""/>
 
     <EditText
             android:id="@+id/edit_text_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="8dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp" android:minHeight="48dp" android:autofillHints=""/>
 
     <Button
             android:id="@+id/button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/login"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/text_view_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Don't have an account? Register"
+            android:text="@string/register_hint"
             android:textSize="16sp"
             android:gravity="center"
             android:textColor="@android:color/darker_gray" />
