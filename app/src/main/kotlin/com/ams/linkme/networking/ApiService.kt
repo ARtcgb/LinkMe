@@ -7,10 +7,7 @@ import com.ams.linkme.utils.Constants
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface ApiService {
 
@@ -38,4 +35,9 @@ interface ApiService {
     suspend fun sendMessage(
         @Body message: Message
     ): Response<Message>
+
+
+    @GET("/checkUsernameExists")
+    suspend fun checkUsernameExists(@Query("username") username: String): Response<Boolean>
+
 }
