@@ -1,8 +1,6 @@
 package com.ams.linkme.networking
 
-import com.ams.linkme.model.LoginRequest
-import com.ams.linkme.model.LoginResponse
-import com.ams.linkme.model.Message
+import com.ams.linkme.model.*
 import com.ams.linkme.utils.Constants
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -24,6 +22,10 @@ interface ApiService {
 
     @POST("login")
     suspend fun login(@Body loginRequest: LoginRequest): Response<LoginResponse>
+
+    @POST("/register")
+    suspend fun register(@Body registerRequest: RegisterRequest): Response<RegisterResponse>
+
 
     @GET("chat/{userId}/{friendId}")
     suspend fun getMessages(

@@ -5,7 +5,7 @@ package com.ams.linkme.utils
  */
 object Constants {
     // The base URL of the API
-    const val BASE_URL = "https://your-api-url.com/"
+    const val BASE_URL = "https://127.0.0.1:8080/"
 
     // The key for SharedPreferences to store user data
     const val PREFS_USER_KEY = "user"
